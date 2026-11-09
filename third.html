@@ -5,10 +5,10 @@
     <title>market.ru</title>
 </head>
 <main>
-    <a href="/iphone13/index.html/">Главная</a>
-    <a href="/iphone13/index.html/#one">Сравнение с 13 Pro</a>
-    <a href="/iphone13/second.html/">отзывы</a>
-    <a href="/iphone13/index.html/third.html/">Заказать</a>
+    <a href="index.html">Главная</a>
+    <a href="index.html#one">Сравнение с 13 Pro</a>
+    <a href="second.html">отзывы</a>
+    <a href="third.html">Заказать</a>
 </main>
 <body>
 
@@ -31,12 +31,12 @@
     <div>
         <label>
             Телефон
-            <select name="number" required>
-                <option value="male">+375</option>
-                <option value="male">+7</option>
-                <option value="male">+380</option>
+            <select name="number[]" required>
+                <option value="Беларусь">+375</option>
+                <option value="Россия">+7</option>
+                <option value="Украина">+380</option>
             </select>
-            <input type="number" name="number" required/>
+            <input type="number" name="number[]" required/>
         </label>
     </div>
     <br>
@@ -64,11 +64,11 @@
             Способ доставки
             <br>
             <label>
-                <input type="radio" name="delivery" value="курьером" required/> Курьером
+                <input type="radio" name="delivery" value="курьером"  checked/> Курьером
             </label>
             <br>
             <label>
-                <input type="radio" name="delivery" value="Самовывоз" required/> Самовывоз
+                <input type="radio" name="delivery" value="Самовывоз" /> Самовывоз
             </label>
 
         </label>
@@ -79,16 +79,16 @@
             Добавить к заказу
             <br>
             <label>
-                <input type="checkbox" name="additionally" value="Прозрачный чехол" /> Прозрачный чехол
+                <input type="checkbox" name="additionally[]" value="Прозрачный чехол" /> Прозрачный чехол
             </label>
             <br>
             <label>
-                <input type="checkbox" name="additionally" value="Беспроводное зарядное устройство Mag Safe" />
+                <input type="checkbox" name="additionally[]" value="Беспроводное зарядное устройство Mag Safe" />
                 Беспроводное зарядное устройство Mag Safe
             </label>
             <br>
             <label>
-                <input type="checkbox" name="additionally" value="Наушники AirPods" /> Наушники AirPods
+                <input type="checkbox" name="additionally[]" value="Наушники AirPods" /> Наушники AirPods
             </label>
         </label>
     </div>
@@ -109,7 +109,7 @@
     <br>
     <div>
         <label>
-            <button type="submit"> Заказать</button>
+            <button> Заказать</button>
         </label>
     </div>
     <br>
